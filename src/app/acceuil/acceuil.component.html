@@ -1,0 +1,32 @@
+
+<header>
+  <h1>Pharmacie CENTRALE</h1>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/acc')">Acceuil</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/prod')">Produits</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/pan')">Panier</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/fact')">Factures</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Déconnexion</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<table >
+  <tr>
+    <th>Nom</th>
+    <th>Prénom</th>
+    <th>E-mail</th>
+    <th>Profil</th>
+    <th>Active</th>
+  </tr>
+  <tr *ngIf="user">
+    <td>{{ user.last_name }}</td>
+    <td>{{ user.firstname }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.profile }}</td>
+    <td>{{ user.active }}</td>
+  </tr>
+
+</table>
+</body>

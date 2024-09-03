@@ -1,0 +1,27 @@
+
+<header>
+  <h1>Pharmacie de TABOUS</h1>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" routerLink="/con">Accueil</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Produits</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Factures</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Déconnexion</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<form class="css" (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <fieldset>
+    <legend>Authentification</legend>
+    <label for="login">E-mail:</label>
+    <input type="text"  name="email"ngModel required/>
+    <br />
+    <label for="password">Mot de Passe:</label>
+    <input type="password" name="password" ngModel required/>
+    <br/>
+    <input type="submit" name="Envoie" value="Valider" id="envoie" />
+  </fieldset>
+  <h6>Si vous n'avez pas de compte cliquez sur <a routerLink="/ins">INSCRIPTION</a></h6>
+</form>
+</body>

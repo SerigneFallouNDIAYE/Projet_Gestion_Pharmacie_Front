@@ -1,0 +1,27 @@
+
+<header>
+  <h1>Pharmacie Centrale</h1>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/acc')">Acceuil</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/prod')">Produits</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/pan')">Panier</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/fact')">Factures</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Déconnexion</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<h1>Products</h1>
+<div class="product-container">
+  <div class="product-card" *ngFor="let produit of produits" >
+    <div class="product-info">
+      <h5>{{ produit.name }}</h5>
+      <p>$ {{ produit.prix }}</p>
+      <button class="add-to-cart-btn" (click)="addProduct(produit.id)">+</button>
+    </div>
+  </div>
+</div>
+</body>
+
+

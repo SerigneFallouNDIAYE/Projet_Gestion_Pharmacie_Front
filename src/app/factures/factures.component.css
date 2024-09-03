@@ -1,0 +1,190 @@
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 50px;
+  text-align: center;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 10px 15px;
+  position: relative;
+  top: -9px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+}
+
+header{
+  background-color: darkgreen;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  margin: 10px 50px;
+  height: 60px;
+}
+.menu li{
+  display: inline-block;
+  margin: 10px 5px;
+}
+.menu li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+.menu li a:hover{
+  background: white;
+  transition: 2s;
+  color: black;
+}
+.menu{
+  float: right;
+  list-style: none;
+  margin: 20px;
+  position: relative;
+}
+.entete{
+  background: rgb(0, 0, 0, 0.5);
+  height: 80px;
+}
+.np{
+  border: 4px solid honeydew;
+  border-radius: 4px;
+}
+.dp{
+  border: 4px solid honeydew;
+  background-color: tomato;
+  border-radius: 4px;
+}
+body
+{
+  background-color: honeydew;
+}
+.p{
+  border: 4px solid honeydew;
+  border-radius: 4px;
+}
+table{
+  border-collapse: collapse;
+  width: 400px;
+}
+th, td{
+  border: 1px solid black;
+  padding: 10px;
+  vertical-align: top;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: honeydew;
+}
+
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.facture-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.facture-container h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.facture-details p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.facture-details p strong {
+  color: #333;
+}
+.payment-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pay-button {
+  background-color: #4CAF50; /* Couleur verte */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+  background-color: #45a049; /* Un vert un peu plus foncé */
+}

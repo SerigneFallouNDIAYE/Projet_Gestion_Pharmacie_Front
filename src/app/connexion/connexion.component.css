@@ -1,0 +1,152 @@
+
+form.css label
+{
+  display: inline;
+  font-weight: bold;
+}
+form.css input
+{
+  margin-top : 20px;
+
+}
+textarea
+{
+  vertical-align: baseline;
+  resize: none;
+  height: 5rem;
+  width: 60%;
+  margin-top: 20px ;
+}
+legend
+{
+  font-size: large;
+  font-weight: bold;
+  color: darkgreen;
+  background-color: honeydew;
+  border: 1px solid darkgreen ;
+
+}
+
+fieldset {
+  border: 1px solid darkgreen ;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  width : 50%;
+  background-color: beige;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+#envoie
+{
+  float: right;
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: 1s;
+}
+body
+{
+  background-color: honeydew;
+
+}
+header{
+  background-color: darkgreen;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  margin: 10px 50px;
+  height: 60px;
+}
+.menu li{
+  display: inline-block;
+  margin: 10px 5px;
+}
+.menu li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+.menu li a:hover{
+  background: white;
+  transition: 2s;
+  color: black;
+}
+.menu{
+  float: right;
+  list-style: none;
+  margin: 20px;
+  position: relative;
+}
+.entete{
+  background: rgb(0, 0, 0, 0.5);
+  height: 80px;
+}
+.np{
+  border: 4px solid honeydew;
+  border-radius: 4px;
+}
+.dp{
+  border: 4px solid honeydew;
+  background-color: tomato;
+  border-radius: 4px;
+}
+body
+{
+  background-color: honeydew;
+}
+.p{
+  border: 4px solid honeydew;
+  border-radius: 4px;
+}
+table{
+  border-collapse: collapse;
+  width: 400px;
+}
+th, td{
+  border: 1px solid black;
+  padding: 10px;
+  vertical-align: top;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: honeydew;
+}
+
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

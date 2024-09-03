@@ -1,0 +1,99 @@
+
+
+header{
+  background-color: darkgreen;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  margin: 10px 50px;
+  height: 60px;
+}
+.menu li{
+  display: inline-block;
+  margin: 10px 5px;
+}
+.menu li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+.menu li a:hover{
+  background: white;
+  transition: 2s;
+  color: black;
+}
+.menu{
+  float: right;
+  list-style: none;
+  margin: 20px;
+  position: relative;
+}
+.entete{
+  background: rgb(0, 0, 0, 0.5);
+  height: 80px;
+}
+.np{
+  border: 4px solid honeydew;
+  border-radius: 4px;
+}
+.dp{
+  border: 4px solid honeydew;
+  background-color: tomato;
+  border-radius: 4px;
+}
+body
+{
+  background-color: honeydew;
+}
+.p{
+  border: 4px solid honeydew;
+  border-radius: 4px;
+}
+table{
+  border-collapse: collapse;
+  width: 400px;
+}
+th, td{
+  border: 1px solid black;
+  padding: 10px;
+  vertical-align: top;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: honeydew;
+}
+
+header {
+  background-color: darkgreen;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

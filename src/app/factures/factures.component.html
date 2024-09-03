@@ -1,0 +1,24 @@
+
+<header>
+  <h1>Pharmacie CENTRALE</h1>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/acc')">Acceuil</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/prod')">Produits</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/pan')">Panier</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/fact')">Factures</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Déconnexion</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<div class="facture-container">
+  <h2>Facture #{{ facture.id }}</h2>
+  <div class="facture-details">
+    <p><strong>Date:</strong> {{ facture.date| date: 'fullDate' }}</p>
+    <p><strong>Utilisateur:</strong> {{ facture.user.firstname }} {{ facture.user.last_name }}</p>
+    <p><strong>Valeur totale:</strong> ${{ facture.value.toFixed(2) }}</p>
+  </div>
+</div>
+
+</body>

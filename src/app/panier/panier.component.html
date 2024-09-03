@@ -1,0 +1,44 @@
+<header>
+  <h1>Pharmacie Centrale</h1>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/acc')">Acceuil</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/prod')">Produits</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/pan')">Panier</a></li>
+      <li><a href="javascript:void(0);" (click)="naviguerAvecExtras('/fact')">Factures</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Déconnexion</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<div *ngIf="cartProducts">
+
+  <div *ngIf="cartProducts.length; else emptyCart">
+    <h2>Votre Panier</h2>
+    <div *ngFor="let item of cartProducts" class="cart-item">
+      <div class="product-info">
+        <h3>{{ item.product.name }}</h3>
+        <p>Prix: ${{ item.product.prix }}</p>
+        <p>Quantité: {{ item.quantity }}</p>
+      </div>
+      <div class="product-actions">
+        <button (click)="decreaseQuantity(item.product.id)" class="quantity-btn remove-one">-</button>
+        <span class="quantity-display">{{ item.quantity }}</span>
+        <button (click)="removeFromCart(item.product.id)" class="delete-btn">Supprimer</button>
+      </div>
+    </div>
+
+  </div>
+  <ng-template #emptyCart>
+    <p>Votre panier est vide.</p>
+  </ng-template>
+</div>
+<div class="cart-summary">
+  <div class="cart-total">
+    <h3>Total:</h3>
+    <p>${{ calculateTotal() }}</p>
+  </div>
+</div>
+
+
+</body>

@@ -1,0 +1,46 @@
+
+<header>
+  <h1>Pharmacie Centrale</h1>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" routerLink="/con">Accueil</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Produits</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Factures</a></li>
+      <li><a href="javascript:void(0);" routerLink="/con">Déconnexion</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <fieldset>
+    <legend>Inscription</legend>
+    <label for="nom">Nom:</label>
+    <input type="text" name="last_name" id="nom" ngModel required/>
+    <br/>
+    <label for="prenom">Prénom:</label>
+    <input type="text" name="firstname" id="prenom" ngModel required/>
+    <br/>
+    <label for="mail">E-Mail:</label>
+    <input type="text" name="email" id="mail" ngModel placeholder="me@exemple.com" required/>
+    <br/>
+    <label for="Profil">Profil:</label>
+    <input type="radio" name="profile" value="EMPLOYE" ngModel class="valid" id="myRadio">Employé
+    <input type="radio" name="profile" value="CLIENT" ngModel class="valid" id="myRadio2">Client
+    <br/>
+    <label for="Active">Active:</label>
+    <input type="radio" name="active" value="true" ngModel class="valid" id="myRadio3">True
+    <input type="radio" name="active" value="false" ngModel class="valid" id="myRadio4">False
+    <br/>
+    <label for="passwd">Mot de Passe:</label>
+    <input type="password" name="password" id="passwd" ngModel required/>
+    <br/>
+    <label for="repasswd">Verif Mot de Passe:</label>
+    <input type="password" name="repasswd" id="repasswd" ngModel required/>
+    <br/>
+    <input type="Submit" value="ENVOYER" name="Envoie" id="envoie" >
+
+  </fieldset>
+  <h6>Si vous avez deja un compte cliquez sur <a routerLink="/con">CONNEXION</a></h6>
+
+</form>
+</body>
